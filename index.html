@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/ENE2019.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div id="marca-dagua1">
+				<div style="text-align:center; position:absolute; top:3%; left: 10%; font-size:50%; color:darkcyan">
+					<i>Angourakis et al. - <i>Early Neolithic of Europe</i>
+				</div>
+				<div style="text-align:left; position:absolute; top:6%; left: 10%; font-size:50%; color:gray">
+					<b>6-8th November 2019</b>
+				</div>
+				<div style="text-align:right; position:absolute; top:6%; right: 10%; font-size:50%; color:gray">
+					<b><a href="https://andros-spica.github.io/ENE-Angourakis-et-al-2019/">https://andros-spica.github.io/ENE-Angourakis-et-al-2019/</a></b>
+				</div>
+			</div>
+			<div id="ENEtheme" style="background: url('figures/ENE-background.png');
+                        position: absolute;
+                        bottom: 100px;
+                        right: 100px;
+                        width: 250px;
+                        height: 500px;"></div>
+			<div class="slides">
+				<section data-state="title-page">
+					<h2>Theory strikes back</h2>
+					A modelling and simulation theory building approach on the origin of agriculture
+					<p>
+						<small style="color:DodgerBlue;">Andreas <b>Angourakis</b>, Jonas <b>Alcaina-Mateos</b>, Marco <b>Madella</b>, and Débora <b>Zurro</b></small>
+						<br>
+						<small>Session 6: <i>Subsistence</i></small>
+					</p>
+					<small>available at 
+						<a href="https://andros-spica.github.io/ENE-Angourakis-et-al-2019/">https://andros-spica.github.io/ENE-Angourakis-et-al-2019/</a><br>
+						<a href="https://andros-spica.github.io/ENE-Angourakis-et-al-2019/index.html?print-pdf">https://andros-spica.github.io/ENE-Angourakis-et-al-2019/index.html?print-pdf</a> (printable version)</small>
+					<img src="figures/logo-combo-redux.png" alt="Two Rains logo" 
+					style="width: 550px; border: none; box-shadow: none; position: absolute; top: 110%;right: 24%"/>
+					<img src="figures/twiter Cases.jpg" alt="CaSEs logo" 
+					style="width: 130px; border: none; box-shadow: none; position: absolute; top: 100%;right: 83%"/>
+					<img src="figures/MPCP-logo.png" alt="MPCP-IMF-CSIC logo" 
+					style="width: 140px; border: none; box-shadow: none; position: absolute; top: 100%;right: 6%; z-index: -10;"/>
+				</section>
+				<section>
+					<br><br><br><h3>Plant domestication and origin of agriculture<br></h3>
+					<img alt="HPCmodel logo" src="figures/Logo_v2.png"
+					style="width: 400px; border: none; box-shadow: none;">
+					<section>
+						<br><br><br><br><br><br><br><br><br>
+						<b>Origins of agriculture</b>: transitions from foraging to any modality of agriculture.
+					</section>
+					<section>
+							<br><br><br><br><br><br><br><br><br>
+						<b>Agriculture</b>: a subsistence system in which humans rely on extracting foodstuff from domesticated species.
+					</section>
+					<section>
+							<br><br><br><br><br><br><br><br><br>
+						<b>Domestication</b>: process in which certain human behaviours condition the differential reproduction of phenotypes of another species, eventually modifying its genetic composition (domestication syndrome).
+					</section>
+				</section>
+				<section>
+					<h3>Modelling and theory building</h3>
+					<ul>
+						<li>Advances in <b>where/when</b>, but <b>how/why</b> still lacking</li>
+						<li>Common topics, but still <b>conflicting</b> models (push vs pull, internal vs external causation, communalities vs particularities)</li>
+						<li>Converging framework:<br><b>Coevolution</b> between humans and another species<br>as <b>mutualistic</b> partners</li>
+					</ul>
+				</section>
+				<section>
+					<h3>The Human-Plant Coevolution model</h3>
+				</section>
+				<section>
+					<br><br><br><h3>the idea</h3>
+					<section>
+						<ul>
+							<li>Inspiration from<br>D. Rindos (1984) <i>The Origins of Agriculture: An evolutionary Perspective</i></li><br>
+							<li>Combining models:<br><b>Population ecology</b> (similar to predator-prey models)<br>+<br><b>Replicator Dynamics</b><br>(Schuster & Sigmund 1983 Replicator Dynamics <i>J. theor. Biol</i> 100:533-538)</li>
+						</ul>
+					</section>
+					<section>
+						Core idea: <b>dynamically reinforced, positive feedback loop</b><br><br>
+						<ul>
+							<li>Humans become more dependent on a plant population as a food source, and invest more time and energy into maintaining the conditions favouring it.</li><br>
+							<li>The plant population rely more on an human-modified environment, and some phenotypes thrive the more intense is human action.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h3>design</h3>
+					<div id="left50">
+						<img alt="HPCmodel diagram" src="figures/Forrester-diagram.png"
+						style="width: 600px; border: none; box-shadow: none;"><br>
+						<b>Coevolution coefficient</b><br>
+						<img alt="HPCmodel eq coevo" src="figures/equations/coevo.gif"
+						style="width: 300px; border: none; box-shadow: none;">
+					</div>
+					<div id="right50">
+						<img alt="HPCmodel eq H" src="figures/equations/H.gif"
+						style="width: 300px; border: none; box-shadow: none;"><br>
+						<img alt="HPCmodel eq P" src="figures/equations/P.gif"
+						style="width: 300px; border: none; box-shadow: none;"><br>
+						<img alt="HPCmodel eq H" src="figures/equations/K_H.gif"
+						style="width: 200px; border: none; box-shadow: none;"><br>
+						<img alt="HPCmodel eq P" src="figures/equations/K_P.gif"
+						style="width: 300px; border: none; box-shadow: none;"><br>
+						<img alt="HPCmodel eq U_AB" src="figures/equations/U_AB.gif"
+						style="width: 200px; border: none; box-shadow: none;"> &nbsp &nbsp &nbsp 
+						<img alt="HPCmodel eq U_bA" src="figures/equations/U_bA.gif"
+						style="width: 200px; border: none; box-shadow: none;"><br>
+						<img alt="HPCmodel eq pop-v" src="figures/equations/pop-v.gif"
+						style="width: 300px; border: none; box-shadow: none;"><br>
+						<img alt="HPCmodel eq pop-fit" src="figures/equations/pop-fit.gif"
+						style="width: 300px; border: none; box-shadow: none;"><br>
+					</div>
+				</section>
+				<section>
+					<h3>dynamics</h3>
+					<div id="left40">
+						Two populations linked by mutualism<br><br>
+						Coevolutionary dynamics integrating<br><b>utility exchange</b> and<br><b>phenotypic fitness</b>
+					</div>
+					<div id="right60">
+						<img alt="HPCmodel infograph" src="figures/Infograph.png"
+						style="width: 600px; border: none; box-shadow: none;">
+					</div>
+				</section>
+				<section>
+					<br><br><h3>Outcomes: End-states</h3>
+				</section>
+				<section>
+					<section>
+						<b>Coevolution does not occur</b>
+						<div id="left60">
+							<img alt="no-coevo anim" src="figures/run.no.coevo-anim.gif"
+							style="width: 600px; border: none; box-shadow: none;">
+						</div>
+						<div id="right40" style="text-align:center">
+							<br><br>
+							weaker mutualism
+							<br><br>
+							population levels can still be relatively high, depending on parameter conditions
+						</div>  
+					</section>
+					<section>
+						<b>Coevolution occurs</b>
+						<div id="left60">
+								<img alt="coevo-coeta anim" src="figures/run.coevo.coeta-anim.gif"
+								style="width: 600px; border: none; box-shadow: none;">
+						</div>
+						<div id="right40" style="text-align:center">
+							<br><br>
+							stronger mutualism
+							<br><br>
+							both population "booms" and "bleeps" are possible
+							<br><br>
+							order and scale of timing of change also vary
+						</div>
+					</section>
+					<section>
+						<b>Coevolution occurs</b>
+						<br>
+						boom 
+						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bleep 
+						&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp long boom
+						<br>
+						<img alt="coevo-coeta anim" src="figures/run.coevo.boom-anim.gif"
+						style="width: 300px; border: none; box-shadow: none;">
+						<img alt="coevo-coeta anim" src="figures/run.coevo.bleep-anim.gif"
+						style="width: 300px; border: none; box-shadow: none;">
+						<img alt="coevo-coeta anim" src="figures/run.coevo.long.boom-anim.gif"
+						style="width: 300px; border: none; box-shadow: none;">
+					</section>
+					<section>
+						<b>Coevolution occurs partially</b>
+						<div id="left60">
+							<img alt="cult witout dom anim" src="figures/run.cult.without.dom-anim.gif"
+							style="width: 600px; border: none; box-shadow: none;">
+						</div>
+						<div id="right40" style="text-align:center">
+							<br><br>
+							one population achieve the full potential of change
+						</div>
+					</section>
+					<section>
+						<b>Coevolution occurs partially<br>(II)</b>
+						<div id="left60">
+							<img alt="semicoevo anim" src="figures/run.semicoevo-anim.gif"
+							style="width: 600px; border: none; box-shadow: none;">
+						</div>
+						<div id="right40" style="text-align:center">
+							<br><br>
+							One or both populations undergo a significant, but partial change, remaining relatively well distributed among types.
+						</div>
+					</section>
+					<section>
+						<b>Coevolution occurs partially<br>(III)</b>
+						<div id="left60">
+							<img alt="semicoevo osc anim" src="figures/run.semicoevo.osc2-anim.gif"
+							style="width: 600px; border: none; box-shadow: none;">
+						</div>
+						<div id="right40" style="text-align:center">
+							<br><br>
+							Both populations become trapped in an endless cycle alternating stronger and weaker mutualism
+						</div> 
+					</section>
+				</section>
+				<section>
+					<br><br><h3>Sensitivity analysis</h3>
+				</section>
+				<section>
+					<div id="left50">
+						<img alt="endstates map" src="figures/5_multiplePar-coevo_endstates-ggplot.png"
+						style="width: 600px; border: none; box-shadow: none;">
+					</div>
+					<div id="right50" style="text-align: center;">
+						<h3>Extensive exploration of parameter space</h3>
+						<br><br>
+						Change in plants (domestication) is more likely to happen than change in humans (cultivation)
+						<br>(assuming all conditions explored are equally probable)
+					</div>
+				</section>
+				<section>
+					<h3>multicausality</h3>
+					<div id="left60">
+						<img alt="random forest imp" src="figures/Fig6-RF-coevo.png"
+						style="width: 600px; border: none; box-shadow: none;">
+					</div>
+					<div id="right40" style="text-align: center;">
+						multiple requirements/triggers for coevolution to happen
+						<br><br>
+						but there are differences in importance (parameters more likely to be requirements/triggers than others) 
+					</div>
+				</section>
+				<section>
+					<h3>Roles of parameters</h3>
+					<div id="right40" style="text-align: left;">
+						<br><br>
+						<ul><li>facilitators</li><li>obstructors</li><li>scalers</li></ul>
+						<br><br>
+						Example:
+						<br>
+						utility of the most mutualistic human and plant types
+						<br>&rarr; facilitators and scalers
+					</div>
+					<div id="left60">
+						<img alt="two par exp" src="figures/3_twoPar-mU.HnP-mU.PnH_plot.png"
+						style="width: 600px; border: none; box-shadow: none;">
+					</div>
+					
+				</section>
+				<section>
+					<h3>Publication & documentation</h3>
+					<ul>
+						<li>publication in preparation</li>
+						<li>R package (HPCoevo) to be release</li>
+						<li>repository of this presentation:<br>
+							<a href="https://github.com/Andros-Spica/ENE-Angourakis-et-al-2019" target="_blank">
+								https://github.com/Andros-Spica/ENE-Angourakis-et-al-2019</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3>Funding</h3>
+					<i>Modelling plant cultivation in prehistory/Modelado del cultivo en la prehistoria</i> 
+					(HAR2016-77672-P; PI: Débora Zurro, IMF-CSIC)
+					<br>
+					<img alt="MPCP logo" src="figures/MPCP-logo-horizontal.png"
+						style="width: 500px; border: none; box-shadow: none;">
+					<br>
+					<a href="https://www.arch.cam.ac.uk/research/projects/current-projects/tworains" target="_blank">
+						<i>Winter Rain, Summer Rain: Adaptation, Climate Change, Resilience and the Indus Civilisation <b>TwoRains</b></i> 
+						(ERC-2014-CoG; PI: Cameron Petrie, University of Cambridge)
+						<img alt="TwoRains logo" src="figures/logo-combo-redux.png"
+						style="width: 800px; border: none; box-shadow: none;">
+					</a>
+				</section>
+				<section>
+					<h2>Theory strikes back</h2>
+					A modelling and simulation theory building approach on the origin of agriculture
+					<p>
+						<small style="color:DodgerBlue;">Andreas <b>Angourakis</b>, Jonas <b>Alcaina-Mateos</b>, Marco <b>Madella</b>, and Débora <b>Zurro</b></small>
+						<br>
+						<small>Session 6: <i>Subsistence</i></small>
+					</p>
+					<p>
+						THANK YOU!
+					</p>
+					<p>
+						<small>address any questions to A. Angourakis: <i style="color:blue">andros.spica@gmail.com</i></small>
+					</p>
+					<small>available at 
+						<a href="https://andros-spica.github.io/ENE-Angourakis-et-al-2019/">https://andros-spica.github.io/ENE-Angourakis-et-al-2019/</a><br>
+						<a href="https://andros-spica.github.io/ENE-Angourakis-et-al-2019/index.html?print-pdf">https://andros-spica.github.io/ENE-Angourakis-et-al-2019/index.html?print-pdf</a> (printable version)</small>
+						<img src="figures/logo-combo-redux.png" alt="Two Rains logo" 
+						style="width: 550px; border: none; box-shadow: none; position: absolute; top: 110%;right: 24%"/>
+						<img src="figures/twiter Cases.jpg" alt="CaSEs logo" 
+						style="width: 130px; border: none; box-shadow: none; position: absolute; top: 100%;right: 83%"/>
+						<img src="figures/MPCP-logo.png" alt="MPCP-IMF-CSIC logo" 
+						style="width: 140px; border: none; box-shadow: none; position: absolute; top: 100%;right: 6%; z-index: -10;"/>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true }
+				]
+			});
+
+			// Code scraps:
+			// <a title="Notas de prensa [CC BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Confused_man.jpg" target="_blank"><img width="300" alt="Confused man" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Confused_man.jpg"></a>
+		</script>
+	</body>
+</html>

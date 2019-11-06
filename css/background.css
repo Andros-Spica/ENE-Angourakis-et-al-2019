@@ -1,0 +1,6 @@
+body { 
+    background-size: 50%; 
+    background-image: url("figures/ENE-background.png"); 
+    background-position: left top; 
+    background-repeat: no-repeat; 
+}
