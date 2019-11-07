@@ -8,13 +8,13 @@ Prepared with *reveal.js* (see https://revealjs.com/)
 https://andros-spica.github.io/ENE-Angourakis-et-al-2019/
 
 **Authors**  
-Angourakis, Andreas (University of Cambridge)
+*Angourakis, Andreas* (University of Cambridge)
 
-Alcaina-Mateos, Jonas (CaSEs, Universitat Pompeu Fabra)
+*Alcaina-Mateos, Jonas* (CaSEs, Universitat Pompeu Fabra)
 
-Madella, Marco (ICREA-CaSEs, Universitat Pompeu Fabra)
+*Madella, Marco* (ICREA-CaSEs, Universitat Pompeu Fabra)
 
-Zurro, Débora (CaSEs, Institución Milá y Fontanals-CSIC)
+*Zurro, Débora* (CaSEs, Institución Milá y Fontanals-CSIC)
 
 **Abstract**  
 The domestication of plants and the origin of agricultural societies has been the focus of much theoretical discussion on why, how, when, and where this change happened. The 'when' and 'where' have been substantially addressed by bioarchaeology, thanks to advances in methodology and the geographical and chronological scope of evidence. However, the 'why' and 'how' have lagged in explanatory power. Armed with the evidence now available, we can return to theory by revisiting the mechanisms allegedly involved, disentangling their connection to the diversity of trajectories, being those protracted or sudden, and identifying the weight and role of the social and ecological parameters involved.  
