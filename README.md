@@ -1,7 +1,7 @@
 # Theory strikes back: a modelling and simulation theory building approach on the origin of agriculture
 Presentation for the Early Neolithic of Europe (ENE) conference in Barcelona (6-8 November 2019)
 
-https://ene2019.org/
+Conference web page: https://ene2019.org/
 
 Prepared with *reveal.js* (see https://revealjs.com/)
 
