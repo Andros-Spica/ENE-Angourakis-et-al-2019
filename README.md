@@ -5,7 +5,7 @@ https://ene2019.org/
 
 Prepared with *reveal.js* (see https://revealjs.com/)
 
-https://andros-spica.github.io/ENE-Angourakis-et-al-2019/
+Slides: https://andros-spica.github.io/ENE-Angourakis-et-al-2019/
 
 **Authors**  
 *Angourakis, Andreas* (University of Cambridge)
